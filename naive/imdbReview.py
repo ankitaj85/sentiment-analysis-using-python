@@ -3,7 +3,7 @@
 dataset_path='/space/changhxu/LDA/project/aclImdb/'
 
 import numpy
-import cPickle as pkl
+import pickle as pkl
 
 from collections import OrderedDict
 from nltk.corpus import stopwords
