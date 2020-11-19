@@ -17,7 +17,7 @@ def extract_words(sentences):
     result = []
     stop = stopwords.words('english')
     trash_characters = '?.,!:;"$%^&*()#@+/0123456789<>=\\[]_~{}|`'
-    trans = string.maketrans(trash_characters, ' '*len(trash_characters))
+    trans = str.maketrans(trash_characters, ' '*len(trash_characters))
 
     for text in sentences:
         text = re.sub(r'[^\x00-\x7F]+',' ', text)
